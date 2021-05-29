@@ -1,0 +1,14 @@
+.LabeledButton {
+	background: var(--color-accent);
+	padding: 0.75em;
+	border-radius: 5px;
+	border: none;
+	opacity: 0.95;
+	transition: 0.15s;
+	margin: 1em 0;
+}
+
+.LabeledButton:hover {
+	opacity: 1;
+	cursor: pointer;
+}

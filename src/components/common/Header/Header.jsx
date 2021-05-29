@@ -1,9 +1,9 @@
-import { faAddressBook, faBacon, faHome, faUsers, faUtensils } from '@fortawesome/free-solid-svg-icons';
+import { faAddressBook, faHome, faBook } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { Menu } from '../Menu/Menu.jsx';
 import './Header.scss';
 
-const navigationOptions = [faHome, faUtensils, faUsers, faAddressBook];
+const navigationOptions = [faHome, faBook, faAddressBook];
 
 export const Header = () => {
 	return (

@@ -11,7 +11,7 @@ export const Menu = (props) => {
 					<li className='Menu__option'>
 						<a href=''>
 							{props.areIcons ? (
-								<h1>
+								<h1 className='Menu__icon'>
 									<FontAwesomeIcon icon={option} />
 								</h1>
 							) : (
