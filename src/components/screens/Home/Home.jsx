@@ -14,21 +14,23 @@ export const Home = () => {
 				Facl
 				<img src={logo} alt='' />a
 			</h1>
-			<InfoBox
-				title='Cine suntem?'
-				text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, facere. Placeat, ullam ipsam aspernatur rerum dolores dicta ex? Error, quidem.'
-			/>
-			<InfoBox
-				title='Ce facem si de ce?'
-				text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, facere. Placeat, ullam ipsam aspernatur rerum dolores dicta ex? Error, quidem.'
-			/>
-			<List title='Reguli' listItems={rules} />
-			<div className='Home__options'>
-				<LabeledButton action='Intra in cont' />
-				<div className='Home__register'>
-					<p>
-						Nu ai cont? <LabeledButton action='Inregistrare' />
-					</p>
+			<div className='Home__main-content'>
+				<InfoBox
+					title='Cine suntem?'
+					text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, facere. Placeat, ullam ipsam aspernatur rerum dolores dicta ex? Error, quidem.'
+				/>
+				<InfoBox
+					title='Ce facem si de ce?'
+					text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, facere. Placeat, ullam ipsam aspernatur rerum dolores dicta ex? Error, quidem.'
+				/>
+				<List title='Reguli' listItems={rules} />
+				<div className='Home__options'>
+					<LabeledButton action='Intra in cont' />
+					<div className='Home__register'>
+						<p>
+							Nu ai cont? <LabeledButton action='Inregistrare' />
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>

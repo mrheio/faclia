@@ -4,12 +4,11 @@
 	width: 100%;
 	background: var(--color-primary--dark);
 	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .Header__nav {
-	height: 100%;
-	padding: 0 1em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	width: 65%;
 }
