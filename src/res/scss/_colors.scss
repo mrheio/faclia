@@ -1,8 +1,9 @@
 :root {
 	--color-primary: hsl(0, 8%, 10%);
 	--color-primary--dark: hsla(0, 9%, 6%, 0.75);
-	--color-secondary: hsl(48, 15%, 81%);
-	--color-secondary--focus: hsl(49, 33%, 90%);
+	--color-primary--dark--hover: hsla(0, 9%, 6%, 1);
+	--color-secondary: hsl(49, 33%, 90%);
+	--color-secondary--focus: hsl(45, 0%, 75%);
 	--color-accent: hsl(0, 84%, 44%);
 	--color-accent--dark: hsl(0, 100%, 25%);
 }

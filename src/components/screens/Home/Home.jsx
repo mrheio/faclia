@@ -25,10 +25,10 @@ export const Home = () => {
 				/>
 				<List title='Reguli' listItems={rules} />
 				<div className='Home__options'>
-					<LabeledButton action='Intra in cont' />
+					<LabeledButton label='Intra in cont' />
 					<div className='Home__register'>
 						<p>
-							Nu ai cont? <LabeledButton action='Inregistrare' />
+							Nu ai cont? <LabeledButton label='Inregistrare' />
 						</p>
 					</div>
 				</div>
