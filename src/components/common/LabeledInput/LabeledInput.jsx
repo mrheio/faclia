@@ -7,7 +7,7 @@ export const LabeledInput = (props) => {
 			<label htmlFor={props.id} className='LabeledInput__label'>
 				{props.label}
 			</label>
-			<input type='text' id={props.id} className='LabeledInput__input' />
+			<input type='text' id={props.id} className='LabeledInput__input' onChange={props.onChange} />
 		</div>
 	);
 };

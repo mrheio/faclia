@@ -12,3 +12,9 @@
 .Header__nav {
 	width: 65%;
 }
+
+.Header__nav ul {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.75rem;
+}
