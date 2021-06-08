@@ -12,7 +12,7 @@ export const Books = () => {
 		for (let i = 0; i < books.length; i++) {
 			books[i]['cover'] = await fetchCover(books[i]);
 		}
-		setBooks(books);
+		return books;
 	};
 
 	const fetchCover = async (book) => {
@@ -21,7 +21,9 @@ export const Books = () => {
 	};
 
 	useEffect(() => {
-		fetchBooks();
+		fetchBooks().then((books) => {
+			setBooks(books);
+		});
 	}, []);
 
 	return (

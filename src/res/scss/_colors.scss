@@ -1,9 +1,11 @@
 :root {
-	--color-primary: hsl(0, 8%, 10%);
-	--color-primary--dark: hsla(0, 9%, 6%, 0.75);
-	--color-primary--dark--hover: hsla(0, 9%, 6%, 1);
-	--color-secondary: hsl(49, 33%, 90%);
-	--color-secondary--focus: hsl(45, 0%, 75%);
-	--color-accent: hsl(0, 84%, 44%);
-	--color-accent--dark: hsl(0, 100%, 25%);
+	--color-primary--1: hsl(0, 0%, 15%);
+	--color-primary--2: hsl(0, 0%, 7.5%);
+	--color-primary--3: black;
+	--color-secondary--1: white;
+	--color-secondary--2: hsl(0, 0%, 75%);
+	--color-secondary--3: hsl(0, 0%, 50%);
+	--color-accent--1: hsl(0, 100%, 65%);
+	--color-accent--2: hsl(0, 100%, 55%);
+	--color-accent--3: hsl(0, 100%, 45%);
 }

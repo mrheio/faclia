@@ -10,17 +10,17 @@ export default class Book {
 		this.coverPath = `covers/${coverSrc.name}`;
 	}
 
-	async saveToStorage() {
-		await StorageService.save(this.coverSrc, 'books', this.coverPath);
+	saveToStorage() {
+		StorageService.save(this.coverSrc, 'books', this.coverPath);
 	}
 
-	async saveToDb() {
+	saveToDb() {
 		const { coverSrc, ...bookData } = this;
-		await DbService.saveBook(bookData);
+		DbService.saveBook(bookData);
 	}
 
-	async save() {
-		await this.saveToStorage();
-		await this.saveToDb();
+	save() {
+		this.saveToStorage();
+		this.saveToDb();
 	}
 }

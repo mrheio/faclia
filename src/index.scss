@@ -8,23 +8,23 @@
 
 body {
 	font-family: var(--ff-primary);
-	background: var(--color-primary);
-	color: var(--color-secondary);
+	background: var(--color-primary--3);
+	color: var(--color-secondary--1);
 }
 
 // typography
 
 h1 {
-	color: var(--color-accent--dark);
+	color: var(--color-secondary--1);
 }
 
 a {
 	text-decoration: none;
-	color: inherit;
+	color: var(--color-secondary--1);
 }
 
 a:hover {
-	color: var(--color-secondary--focus);
+	color: var(--color-secondary--2);
 	cursor: pointer;
 }
 
@@ -40,7 +40,7 @@ input:focus,
 input:active {
 	border: none;
 	outline: none;
-	caret-color: var(--color-secondary);
+	caret-color: var(--color-secondary--1);
 }
 
 input:-webkit-autofill,
@@ -55,9 +55,9 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus,
 select:-webkit-autofill:active {
-	-webkit-text-fill-color: var(--color-secondary);
-	box-shadow: 0 0 0 1000px var(--color-primary--dark) inset !important;
-	-webkit-box-shadow: 0 0 0 1000px var(--color-primary--dark) inset !important;
+	-webkit-text-fill-color: var(--color-secondary--1);
+	box-shadow: 0 0 0 1000px var(--color-primary--2) inset !important;
+	-webkit-box-shadow: 0 0 0 1000px var(--color-primary--2) inset !important;
 	filter: none;
 	transition: background-color 5000s ease-in-out 0s;
 }
