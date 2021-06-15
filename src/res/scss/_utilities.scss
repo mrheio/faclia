@@ -1,0 +1,13 @@
+:root {
+	--border-radius: 25px;
+}
+
+.container--center {
+	width: unquote('min(95%, 800px)');
+	margin: 0 auto;
+	margin-bottom: var(--nav-height);
+}
+
+.rounded {
+	border-radius: var(--border-radius);
+}

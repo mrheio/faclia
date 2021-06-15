@@ -1,3 +1,41 @@
+// Arial (sans-serif)
+// Verdana (sans-serif)
+// Helvetica (sans-serif)
+// Tahoma (sans-serif)
+// Trebuchet MS (sans-serif)
+// Times New Roman (serif)
+// Georgia (serif)
+// Garamond (serif)
+// Courier New (monospace)
+// Brush Script MT (cursive)
+
 :root {
-	--ff-primary: Arial, Helvetica, sans-serif;
+	--ff-primary: Helvetica, Arial, sans-serif;
+
+	--fs--h1: 3rem;
+	--fs--h2: 2.5rem;
+	--fs--h3: 2rem;
+	--fs--h4: 1.75rem;
+	--fs--h5: 1.25rem;
+}
+
+.heading--1 {
+	font-size: var(--fs--h1);
+}
+
+.heading--2 {
+	font-size: var(--fs--h2);
+}
+
+.heading--3 {
+	font-size: var(--fs--h3);
+}
+
+.heading--4 {
+	font-size: var(--fs--h4);
+}
+
+.heading--5 {
+	font-size: var(--fs--h5);
+	font-weight: 500;
 }

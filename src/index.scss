@@ -7,32 +7,64 @@
 }
 
 body {
-	font-family: var(--ff-primary);
 	background: var(--color-primary--3);
 	color: var(--color-secondary--1);
 }
 
+body,
+input,
+textarea,
+button {
+	font-family: var(--ff-primary);
+}
+
+// ===============================
 // typography
+// ===============================
 
 h1 {
-	color: var(--color-secondary--1);
+	font-size: var(--fs--h1);
+}
+
+h2 {
+	font-size: var(--fs--h2);
+}
+
+h3 {
+	font-size: var(--fs--h3);
+}
+
+h4 {
+	font-size: var(--fs--h4);
+}
+
+h5 {
+	font-size: var(--fs--h5);
 }
 
 a {
 	text-decoration: none;
-	color: var(--color-secondary--1);
+	color: var(--color-accent--2);
+	transition: 300ms;
 }
 
-a:hover {
-	color: var(--color-secondary--2);
+a:hover,
+a:focus {
+	color: var(--color-accent--1);
 	cursor: pointer;
 }
 
+// ===============================
 // layout
+// ===============================
 
 ul {
 	list-style: none;
 }
+
+// ===============================
+// input style
+// ===============================
 
 input,
 input:hover,
@@ -42,6 +74,19 @@ input:active {
 	outline: none;
 	caret-color: var(--color-secondary--1);
 }
+
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+	border: none;
+	outline: none;
+	caret-color: var(--color-secondary--1);
+}
+
+// ===============================
+// custom autofill
+// ===============================
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,

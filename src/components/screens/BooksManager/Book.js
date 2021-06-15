@@ -2,12 +2,13 @@ import DbService from '../../../utils/services/DbService.js';
 import StorageService from '../../../utils/services/StorageService.js';
 
 export default class Book {
-	constructor(title, author, genres, coverSrc) {
-		this.title = title;
-		this.author = author;
-		this.genres = genres;
-		this.coverSrc = coverSrc;
-		this.coverPath = `covers/${coverSrc.name}`;
+	constructor(book = {}) {
+		this.title = book.title || '';
+		this.author = book.author || '';
+		this.genres = book.genres || '';
+		this.about = book.about || '';
+		this.coverSrc = book.coverSrc || null;
+		this.coverPath = (book.coverSrc && `covers/${this.coverSrc.name}`) || '';
 	}
 
 	saveToStorage() {

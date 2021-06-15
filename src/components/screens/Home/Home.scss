@@ -1,10 +1,10 @@
 .Home {
 	height: 100vh;
-	width: unquote('min(95%, 800px)');
-	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+		url('../../../res/images/background.jpg') no-repeat center center/cover;
 }
 
 .Home__name {
@@ -17,4 +17,10 @@
 .Home__main-content {
 	padding: 2em;
 	border-radius: 2.5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.Home__options {
+	margin: 0 auto;
 }

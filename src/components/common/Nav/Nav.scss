@@ -1,0 +1,30 @@
+.Nav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: var(--nav-height);
+	background: var(--color-primary--3);
+}
+
+.Nav__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 40%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.Nav__list li {
+	background: linear-gradient(var(--color-accent--2), var(--color-accent--2));
+	background-size: 0 0px, auto;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	transition: all 200ms ease-out;
+	font-size: var(--fs--h5);
+	text-align: center;
+}
+
+.Nav__list li:hover {
+	background-size: 100% 1px, auto;
+}

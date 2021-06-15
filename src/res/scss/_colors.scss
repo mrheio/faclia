@@ -1,11 +1,44 @@
 :root {
+	--alpha: 0.5;
 	--color-primary--1: hsl(0, 0%, 15%);
 	--color-primary--2: hsl(0, 0%, 7.5%);
 	--color-primary--3: black;
+	--color-primary--1--trans: hsla(0, 0%, 15%, var(--alpha));
+	--color-primary--2--trans: hsla(0, 0%, 7.5%, var(--alpha));
+	--color-primary--3--trans: hsla(0, 0%, 0%, var(--alpha));
 	--color-secondary--1: white;
 	--color-secondary--2: hsl(0, 0%, 75%);
 	--color-secondary--3: hsl(0, 0%, 50%);
-	--color-accent--1: hsl(0, 100%, 65%);
-	--color-accent--2: hsl(0, 100%, 55%);
-	--color-accent--3: hsl(0, 100%, 45%);
+	--color-secondary--1--trans: hsla(0, 0%, 100%, var(--alpha));
+	--color-secondary--2--trans: hsla(0, 0%, 75%, var(--alpha));
+	--color-secondary--3--trans: hsla(0, 0%, 75%, var(--alpha));
+	--color-accent--1: hsl(41, 100%, 81%);
+	--color-accent--2: hsl(42, 95%, 67%);
+	--color-accent--3: hsl(42, 62%, 50%);
+}
+
+// ++++++++++++++++++
+// color
+// ++++++++++++++++++
+
+.text--accent--1 {
+	color: var(--color-accent--1);
+}
+
+.text--accent--2 {
+	color: var(--color-accent--2);
+}
+
+.text--accent--3 {
+	color: var(--color-accent--3);
+}
+
+.light--accent {
+	color: var(--color-primary--1);
+	background: var(--color-accent--2);
+}
+
+.dark--accent {
+	color: var(--color-secondary--1);
+	background: var(--color-accent--3);
 }

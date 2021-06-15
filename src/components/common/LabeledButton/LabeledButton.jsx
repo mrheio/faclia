@@ -3,8 +3,8 @@ import './LabeledButton.scss';
 
 export const LabeledButton = (props) => {
 	return (
-		<button className='LabeledButton' onClick={props.onClick}>
-			<h3 className='LabeledButton__label'>{props.label}</h3>
+		<button type={props.type} className='LabeledButton margin--m padding--s' onClick={props.onClick}>
+			<span className='heading--5'>{props.label}</span>
 		</button>
 	);
 };

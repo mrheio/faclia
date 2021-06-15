@@ -3,6 +3,7 @@ import { BookItem } from './BookItem.jsx';
 import './Books.scss';
 import DbService from '../../../utils/services/DbService.js';
 import StorageService from '../../../utils/services/StorageService.js';
+import MediaUtils from '../../../utils/MediaUtils.js';
 
 export const Books = () => {
 	const [books, setBooks] = useState([]);
@@ -17,7 +18,7 @@ export const Books = () => {
 
 	const fetchCover = async (book) => {
 		let imageBlob = await StorageService.get('books', book.coverPath);
-		return URL.createObjectURL(imageBlob);
+		return MediaUtils.toImage(imageBlob);
 	};
 
 	useEffect(() => {
@@ -27,19 +28,11 @@ export const Books = () => {
 	}, []);
 
 	return (
-		<div>
-			<div className='Books__list'>
+		<div className='Books'>
+			<div className='Books__list container--center'>
 				{books.map((book) => {
-					const { title, author, genres, cover } = book;
-					return (
-						<BookItem
-							coverSrc={cover}
-							title={title}
-							author={author}
-							genres={genres}
-							about='about section'
-						/>
-					);
+					const { title, author, genres, about, cover } = book;
+					return <BookItem coverSrc={cover} title={title} author={author} genres={genres} about={about} />;
 				})}
 			</div>
 		</div>

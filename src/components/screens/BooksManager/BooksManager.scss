@@ -1,8 +1,9 @@
 .BooksManager {
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
-	width: 95%;
 	margin: 0 auto;
 	text-align: center;
+}
+
+.BooksManager__form {
+	width: 90%;
+	margin: 0 auto;
 }
